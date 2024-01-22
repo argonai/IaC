@@ -2,7 +2,7 @@
 # https://git.maxkratz.com/maxkratz/apt-packages/src/branch/master/scripts/zsh/zsh-setup.sh
 - name: Install zsh dependencies + packages
   become: true
-  ansible.builtin.apt:
+  ansible.builtin.dnf:
     name:
       - curl
       - wget

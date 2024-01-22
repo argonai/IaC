@@ -31,7 +31,7 @@ services:
     networks:
       - web
     environment:
-      - DEFAULT_EMAIL=le@forgejo.dev
+      - DEFAULT_EMAIL=aaron@argonai.net
     restart: unless-stopped
 
 volumes:

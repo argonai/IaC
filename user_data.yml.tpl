@@ -1,7 +1,7 @@
 #cloud-config
 users:
-  - name: maxkratz
-    groups: users, admin, sudo
+  - name: argonai
+    groups: users, admin, sudo, docker
     sudo: ALL=(ALL) NOPASSWD:ALL
     shell: /bin/bash
     ssh_authorized_keys:

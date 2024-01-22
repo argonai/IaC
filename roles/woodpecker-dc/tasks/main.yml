@@ -34,7 +34,7 @@
     remove_orphans: true
 
 - name: Install LXC dependencies
-  ansible.builtin.apt:
+  ansible.builtin.dnf:
       pkg:
         - lxc
         - git

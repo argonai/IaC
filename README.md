@@ -68,7 +68,11 @@ Ansible is used to configure the VMs and create/configure all necessary services
 ## Manual Steps
 
 Unfortunately, there are currently some manual steps required to complete the initial configuration.
-
+firewall-cmd --zone=public --add-masquerade --permanent
+- After creating the VMs, install `epel-release` manually
+- \# If you want to change the port on a SELinux system, you have to tell
+\# SELinux about this change.
+\# semanage port -a -t ssh_port_t -p tcp #PORTNUMBER
 - Go to the webpage and finish the Forgejo installation including the creation of a `root` user.
     - Login as `root` + change the profile picture.
 - [Add an OAuth2 application for Woodpecker CI](https://woodpecker-ci.org/docs/administration/vcs/gitea#registration)

@@ -4,15 +4,15 @@
 - name: Basic config
   hosts: all
   roles:
-    - role: apt-updates
+    - role: dnf-updates
       become: true
-    - role: apt-packages
+    - role: dnf-packages
       become: true
     - role: docker
       become: true
-    - role: zsh
-    - role: nala
-      become: true
+    # - role: zsh
+    # - role: nala
+    #   become: true
     - role: ansible
       become: true
     - role: vault

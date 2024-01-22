@@ -1,10 +1,10 @@
 ---
-- name: Install ansible via apt
-  ansible.builtin.apt:
+- name: Install ansible via dnf
+  ansible.builtin.dnf:
     pkg:
       - ansible
-- name: Install apt dependencies
-  ansible.builtin.apt:
+- name: Install dnf dependencies
+  ansible.builtin.dnf:
     pkg:
       - python3-docker
       - python3-pip

@@ -33,6 +33,10 @@
     regexp: '^#?Port 22'
     line: "Port {{ sshd_port }}"
 #  notify: Restart sshd
+- name: Alert selinux about Change
+  ansible.builtin.command: semanage port -a -t ssh_port_t -p tcp {{ sshd_port }}
+  ignore_errors: true
+
 
 - name: Restart sshd
   ansible.builtin.service:

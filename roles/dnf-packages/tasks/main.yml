@@ -1,0 +1,66 @@
+---
+- name: Install dnf packages
+  ansible.builtin.dnf:
+    pkg:
+      # gpg keys
+      
+      - ncdu
+      - htop
+      - iftop
+      - iotop
+      - neofetch
+      - git
+      - bind-utils
+      - nload
+      - mtr
+      - vnstat
+      - tmux
+      - bmon
+      - iperf
+      - iperf3
+      - curl
+      - wget
+      - rsync
+      # Build tools
+      # - build-essential
+      - '@Development tools'
+      # - base-files
+      # - base-passwd
+      # - bash
+      # - bsdutils
+      # - coreutils
+      # - dash
+      # - debianutils
+      # - diffutils
+      # - dpkg
+      # - e2fsprogs
+      # - findutils
+      # - grep
+      # - gzip
+      # - hostname
+      # - login
+      # - mount
+      # - ncurses-base
+      # - ncurses-bin
+      # - perl-base
+      # - python-minimal
+      # - sed
+      # - tar
+      # - util-linux
+      #
+      
+      - gnupg2
+      - nmap
+      - speedtest-cli
+      - fuse-sshfs
+      - tldr
+      - tree
+      - net-tools
+      - edac-utils
+      - the_silver_searcher
+      - whois
+      - fio
+      - lm_sensors
+      - dos2unix
+      - jq
+      - firewalld

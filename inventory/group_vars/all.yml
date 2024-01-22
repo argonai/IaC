@@ -14,18 +14,18 @@ role_config:
 # Configuration of packages etc.
 #
 
-user_name: maxkratz
+user_name: argonai
 sshd_config: /etc/ssh/sshd_config
-sshd: "ssh"
+sshd: "sshd"
 sshd_port: "50001"
 
 #
 # Configuraion of URLs etc.
 #
 
-staging_url: "staging.forgejo.dev"
-prod_url: "forgejo.dev"
-migration_url: "s3-mig.forgejo.dev"
+staging_url: "staging.argonai.net"
+prod_url: "git.argonai.net"
+migration_url: "s3-mig.argonai.net"
 
 #
 # Forgejo config
