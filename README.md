@@ -21,7 +21,7 @@ This is a fork of the [forgejo configuration](https://forgejo.dev/forgejo.dev/in
     - Replace the dummy values with the real ones
 - Copy `vars/backup.yml.example` to `vars/backup.yml`
     - Replace the dummy values with the real ones
-
+## DO NOT USE IPV6 FOR WOODPECKER
 
 ## Terraform
 
@@ -73,6 +73,7 @@ firewall-cmd --zone=public --add-masquerade --permanent
 - \# If you want to change the port on a SELinux system, you have to tell
 \# SELinux about this change.
 \# semanage port -a -t ssh_port_t -p tcp #PORTNUMBER
+- Connect the woodpecker container to woodpecker-net
 - Go to the webpage and finish the Forgejo installation including the creation of a `root` user.
     - Login as `root` + change the profile picture.
 - [Add an OAuth2 application for Woodpecker CI](https://woodpecker-ci.org/docs/administration/vcs/gitea#registration)
