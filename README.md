@@ -1,7 +1,7 @@
 # Forgejo DevOps
 
-Automation to create/configure the infrastructure for all services related to [forgejo.dev](https://forgejo.dev).
-
+Automation to create/configure the infrastructure for all services related to [git.argonai.net](https://git.argonai.net).
+This is a fork of the [forgejo configuration](https://forgejo.dev/forgejo.dev/infrastructure-as-code/) made for almalinux
 
 ## Setup (client/workstation)
 
@@ -77,7 +77,7 @@ firewall-cmd --zone=public --add-masquerade --permanent
     - Login as `root` + change the profile picture.
 - [Add an OAuth2 application for Woodpecker CI](https://woodpecker-ci.org/docs/administration/vcs/gitea#registration)
     - Register the tokens within the Woodpecker config and run the Ansible playbook again.
-- Create the organisation `staging.forgejo.dev`/`forgejo.dev`.
+- Create the organisation `staging.argonai.net`/`argonai.net`.
     - Set the correct profile picture.
 - Create the `org` repository in the organisation.
     - Set the correct profile picture.
