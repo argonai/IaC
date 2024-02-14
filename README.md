@@ -69,6 +69,7 @@ Ansible is used to configure the VMs and create/configure all necessary services
 
 Unfortunately, there are currently some manual steps required to complete the initial configuration.
 firewall-cmd --zone=public --add-masquerade --permanent
+
 - After creating the VMs, install `epel-release` manually
 - \# If you want to change the port on a SELinux system, you have to tell
 \# SELinux about this change.
